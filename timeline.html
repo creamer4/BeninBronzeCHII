@@ -87,6 +87,8 @@
   margin-left: -1px;
   content: "";
   background: rgba(255, 255, 255, 0.07);
+  @include responsive() {
+  left: 40px;
 }
 @media only screen and (max-width: 767px) {
   .timeline:before {
@@ -143,6 +145,7 @@
 }
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
+}
 }
 @media only screen and (max-width: 767px) {
   .timeline-item {
