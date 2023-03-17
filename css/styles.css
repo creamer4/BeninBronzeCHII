@@ -11119,11 +11119,11 @@ footer {
 
 header.masthead {
   position: relative;
-  margin-bottom: 0px;
+  margin-bottom: 5rem;
   padding-top: calc(8rem + 57px);
-  padding-bottom: 0px;
+  padding-bottom: 8rem;
   background: no-repeat center center;
-  background-color: #6c757d;
+  background-color: #C1C1C1;
   background-size: cover;
   background-attachment: scroll;
 }
