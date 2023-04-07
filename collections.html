@@ -2275,20 +2275,52 @@
 </div>
 	</div>
 
+  <button class="button" img="assets\img\BAM_Logo_Sticker.jpg" href="https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d">
+  </button>
+
+  <style>
+.button {
+  position: fixed;
+  right: 2rem;
+  bottom: 6rem;
+  border-radius: 100%;
+  background-image: image("BAM_Logo_Sticker.jpg");
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  }
+
+  .button:hover {
+  opacity: 60%;
+  }
+
+  .hidden {
+  opacity: 0%;
+  }
+
+  .button-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #7ac9f9;
+  }
+  </style>
+
 
 
 <!--top1-->
 
-	<div class="progress-bar" />
-	<button class="back-to-top hidden">
-		<svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-		</svg>
-	</button>
-	<div class="progress-bar" />
+<div class="progress-bar" />
+<button class="back-to-top hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+  </svg>
+</button>
+<div class="progress-bar" />
 
-	<style>
-	body {
+<style>
+body {
 height: 5000px;
 background: c1c1c1;
 }
@@ -2350,7 +2382,7 @@ console.log("Client Height: ", scrollContainer().clientHeight);
 
 const scrolledPercentage =
 (scrollContainer().scrollTop /
-	(scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+(scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
 100;
 
 pageProgressBar.style.width = `${scrolledPercentage}%`;
