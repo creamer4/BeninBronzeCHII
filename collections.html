@@ -2307,6 +2307,7 @@
 	</div>
 
   <button class="button-type hidden" onclick="window.location.href='https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d';" img="assets\img\BAM_Logo_Sticker.jpg" href="https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d">
+      <img height=40px widthe=40px src="assets\img\MSU_logo.png"
   </button>
 
   <style>
@@ -2315,7 +2316,6 @@
   right: 2rem;
   bottom: 6rem;
   border-radius: 100%;
-  background-image: BAM_Logo_Sticker.jpg;
   padding: 0.5rem;
   border: none;
   cursor: pointer;
@@ -2332,17 +2332,17 @@
   }
 
   .button-icon {
-  width: 2rem;
-  height: 2rem;
-  color: #7ac9f9;
+  width: 1rem;
+  height: 1rem;
+  color: #FFFFFF;
   }
   </style>
 
   <script>
-  const showOnPx = 100;
+  const showOnP = 100;
   const websiteButton = document.querySelector(".button-type");
 
-  const scrollContainer = () => {
+  const crollContainer = () => {
   return document.documentElement || document.body;
   };
 
@@ -2353,12 +2353,12 @@
   };
 
   document.addEventListener("scroll", () => {
-  console.log("scroll Height: ", scrollContainer().scrollHeight);
-  console.log("Client Height: ", scrollContainer().clientHeight);
+  console.log("scroll Height: ", crollContainer().scrollHeight);
+  console.log("Client Height: ", crollContainer().clientHeight);
 
 
 
-  if (scrollContainer().scrollTop > showOnPx) {
+  if (crollContainer().scrollTop > showOnP) {
   websiteButton.classList.remove("hidden");
   } else {
   websiteButton.classList.add("hidden");
@@ -2372,16 +2372,14 @@
 
 <div class="progress-bar" />
 <button class="back-to-top hidden">
-  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-  </svg>
+<img height=40 width=40 src="C:\Users\15176\Documents\GitHub\BeninBronzeCHII\assets\img\Up_again.png">
 </button>
 <div class="progress-bar" />
 
 <style>
 body {
 height: 5000px;
-background: c1c1c1;
+background: #FFFFFF;
 }
 
 .back-to-top {
@@ -2389,7 +2387,7 @@ position: fixed;
 right: 2rem;
 bottom: 2rem;
 border-radius: 100%;
-background: #141c38;
+background: #FFFFFF;
 padding: 0.5rem;
 border: none;
 cursor: pointer;
