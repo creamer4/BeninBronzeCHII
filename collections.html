@@ -2299,11 +2299,11 @@
 </div>
 	</div>
 
-  <button class="button" onclick="window.location.href='https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d';" img="assets\img\BAM_Logo_Sticker.jpg" href="https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d">
+  <button class="button-type hidden" onclick="window.location.href='https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d';" img="assets\img\BAM_Logo_Sticker.jpg" href="https://collections.broadmuseum.msu.edu/mwebcgi/mweb.exe?request=advanced;_x1110=african,%20nigeria;dtype=d">
   </button>
 
   <style>
-.button {
+.button-type {
   position: fixed;
   right: 2rem;
   bottom: 6rem;
@@ -2331,7 +2331,35 @@
   }
   </style>
 
+  <script>
+  const showOnPx = 100;
+  const websiteButton = document.querySelector(".button-type");
 
+  const scrollContainer = () => {
+  return document.documentElement || document.body;
+  };
+
+  const websiteB = () => {
+  document.body.scrollIntoView({
+  behavior: "smooth"
+  });
+  };
+
+  document.addEventListener("scroll", () => {
+  console.log("scroll Height: ", scrollContainer().scrollHeight);
+  console.log("Client Height: ", scrollContainer().clientHeight);
+
+
+
+  if (scrollContainer().scrollTop > showOnPx) {
+  websiteButton.classList.remove("hidden");
+  } else {
+  websiteButton.classList.add("hidden");
+  }
+  });
+
+  buttonType.addEventListener("click", websiteB);
+  </script>
 
 <!--top1-->
 
