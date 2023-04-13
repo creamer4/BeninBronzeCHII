@@ -264,46 +264,7 @@ $("#timeline-1").timeline();
 
 </script>
 
-<style>
- .overlay {
-   display: none;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   background: #999;
-   width: 100%;
-   height: 100%;
-   opacity: 0.8;
-   z-index: 100;
- }
 
- .popup {
-   display: none;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   background: #fff;
-   width: 500px;
-   height: 500px;
-   margin-left: -250px; /*Half the value of width to center div*/
-   margin-top: -250px; /*Half the value of height to center div*/
-   z-index: 200;
- }
-
- .popupclose {
-   float: right;
-   padding: 10px;
-   cursor: pointer;
- }
-
- .popupcontent {
-   padding: 10px;
- }
-
- .button {
-   cursor: pointer;
- }
- </style>
 
 <body style="background-color:#c1c1c1;">
 
@@ -315,34 +276,9 @@ $("#timeline-1").timeline();
   <div class="timeline">
     <div class="timeline-item" data-text="BRONZES">
       <div class="timeline__content">
-        <button id="button">
-        <img class="timeline__img" src="assets\img\UniversityofNigeria.jpg"/>
-      </button>
-  <div id="overlay"></div>
-    <div id="popup">
-      <div class="popupcontrols">
-    </div>
-    <div class="popupcontent">
-    </div>
-  </div>
-
-  <script>
-	// Initialize Variables
-	var closePopup = document.getElementById("popupclose");
-	var overlay = document.getElementById("overlay");
-	var popup = document.getElementById("popup");
-	var button = document.getElementById("button");
-	// Close Popup Event
-	closePopup.onclick = function() {
-	  overlay.style.display = 'none';
-	  popup.style.display = 'none';
-	};
-	// Show Overlay and Popup
-	button.onclick = function() {
-	  overlay.style.display = 'block';
-	  popup.style.display = 'block';
-	};
-</script>
+        <a href="" onclick="window.open('assets\img\UniversityofNigeria.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">
+        <img class="timeline__img" src="assets\img\UniversityofNigeria.jpg">
+        </a>
 
         <h2 class="timeline__content-title">1960</h2>
         <p class="timeline__content-desc">Michigan State University entered a contract with USAID to assist in creating the University of Nigeria. Throughout the 1950s and 1960s, facaulty and staff from MSU lived, worked, and visited the University to aid and assess the progress being made by the University</p>
