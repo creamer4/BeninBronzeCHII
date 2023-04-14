@@ -264,36 +264,7 @@ $("#timeline-1").timeline();
 
 </script>
 
-
-
-<body style="background-color:#c1c1c1;">
-
-<div class="timeline-container" id="timeline-1">
-  <div class="timeline-header">
-    <h2 class="timeline-header__title"></h2>
-    <h3 class="timeline-header__subtitle">Movement of Benin Bronzes from 1960 to now</h3>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content">
-        <button class="button" href="#" onclick="show('popup')">
-        <img class="timeline__img" src="assets\img\UniversityofNigeria.jpg"/>
-      </button>
-
-      <div class="popup" id="popup">
-  <p>This is a popup!</p>
-  <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
-  <p>Website will still remain visible behind this popup.</p>
-  <a href="#" onclick="hide('popup')">Close</a>
-</div>
-
-
-<div class="popupk" id="popupk">
-  <p>lalalalalal!</p>
-  <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
-  <p>Website will still remain visible behind this popup.</p>
-  <a href="#" onclick="hide('popupk')">Close</a>
-</div>
+<!-- This is button formating -->
 
 <style>
 .popup {
@@ -416,14 +387,41 @@ var hide = function(id) {
 }
 </script>
 
+<body style="background-color:#c1c1c1;">
+
+<div class="timeline-container" id="timeline-1">
+  <div class="timeline-header">
+    <h2 class="timeline-header__title"></h2>
+    <h3 class="timeline-header__subtitle">Movement of Benin Bronzes from 1960 to now</h3>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item" data-text="BRONZES">
+      <div class="timeline__content">
+        <button class="button" href="#" onclick="show('popup')">
+        <img class="timeline__img" src="assets\img\UniversityofNigeria.jpg"/>
+      </button>
+
+      <div class="popup" id="popup">
+          <img src="assets\img\UniversityofNigeria.jpg"/>
+          <a href="#" onclick="hide('popup')">X</a>
+        </div>
+
+
         <h2 class="timeline__content-title">1960</h2>
         <p class="timeline__content-desc">Michigan State University entered a contract with USAID to assist in creating the University of Nigeria. Throughout the 1950s and 1960s, facaulty and staff from MSU lived, worked, and visited the University to aid and assess the progress being made by the University</p>
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <button class="button" href="#" onclick="show('popup')">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\John_Hannah_Headshot.jpg"/>
+      <div class="timeline__content">
+        <button class="button" href="#" onclick="show('popupk')">
+                <img class="timeline__img" src="assets\img\John_Hannah_Headshot.jpg"/>
       </button>
+
+      <div class="popupk" id="popupk">
+        <img src="assets\img\John_Hannah_Headshot.jpg"/>
+        <a href="#" onclick="hide('popupk')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">1963</h2>
         <p class="timeline__content-desc">John Hannah, President of Michigan State University at the time, mentioned to Joseph Druse, Head of the Humanities at U of N, and his brother Arthur Hannah that he was interested in purchses Nigerian artifacts on behalf of MSU and the MSU Museum.</p>
       </div>
