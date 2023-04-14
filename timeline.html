@@ -372,6 +372,138 @@ $("#timeline-1").timeline();
   z-index: -1;
 }
 
+.body {
+  background: offwhite;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.button {
+    margin-top: 50px;
+    background-color: #c1c1c1;
+    border: .2px solid #c1c1c1;
+    color: #c1c1c1;
+    font-size: 25px;
+    padding: 10px 20px;
+
+}
+
+.button:hover {
+    background-color: #c1c1c1;
+    color: #c1c1c1;
+    border: .2px solid #c1c1c1;
+    transition: all 0.3s ease 0s;
+}
+
+.p {
+	margin: 1em 0;
+  font-size: 16px;
+}
+
+
+.popupa {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+.popupa:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupa:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+
+.body {
+  background: offwhite;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.button {
+    margin-top: 50px;
+    background-color: #c1c1c1;
+    border: .2px solid #c1c1c1;
+    color: #c1c1c1;
+    font-size: 25px;
+    padding: 10px 20px;
+
+}
+
+.button:hover {
+    background-color: #c1c1c1;
+    color: #c1c1c1;
+    border: .2px solid #c1c1c1;
+    transition: all 0.3s ease 0s;
+}
+
+.p {
+	margin: 1em 0;
+  font-size: 16px;
+}
+
+
+.popupb {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+.popub:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupb:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
 </style>
 
 <script>
@@ -427,13 +559,31 @@ var hide = function(id) {
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\DruseToAxinnBuy.jpg"/>
+      <div class="timeline__content">
+                <button class="button" href="#" onclick="show('popupa')">
+                  <img class="timeline__img" src="assets\img\DruseToAxinnBuy.jpg"/>
+                </button>
+
+                <div class="popupa" id="popupa">
+                  <img src="assets\img\DruseToAxinnBuy.jpg"/>
+                  <a href="#" onclick="hide('popupa')">Close</a>
+                </div>
+
         <h2 class="timeline__content-title">August 1963</h2>
         <p class="timeline__content-desc">Correspondence between Joeseph Druse and George Axinn indicates that they have purchased antiquites, and were well aware that the official position of the Nigerian Government and the Antiquities Commission was for Nigerian Artifacts to remain in the country. </p>
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\AxinnNotes.jpg"/>
+      <div class="timeline__content">
+        <button class="button" href="#" onclick="show('popupb')">
+        <img class="timeline__img" src="assets\img\AxinnNotes.jpg"/>
+      </button>
+
+      <div class="popupb" id="popupb">
+        <img src="assets\img\DruseToAxinnBuy.jpg"/>
+        <a href="#" onclick="hide('popupb')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">December 1963</h2>
         <p class="timeline__content-desc">In his dictated diary, George Axinn mentioned recieving bronze or wood carvings and statues from John Hannah and was asked to ship the pieces back to the US on behalf of MSU. He passed the artifacts to Bud Doane to ship the items</p>
       </div>
