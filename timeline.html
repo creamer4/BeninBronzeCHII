@@ -479,11 +479,11 @@ $("#timeline-1").timeline();
   top: 50%;
   margin-top: -100px;
   background: #c1c1c1;
-  border: 3px solid #F04A49;
+  border: .2px solid #c1c1c1;
   z-index: 20;
 }
 
-.popub:after {
+.popupb:after {
   position: fixed;
   content: "";
   top: 0;
@@ -495,6 +495,43 @@ $("#timeline-1").timeline();
 }
 
 .popupb:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+.popupc {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popupc:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupc:before {
   position: absolute;
   content: "";
   top: 0;
@@ -575,7 +612,7 @@ var hide = function(id) {
     </div>
     <div class="timeline-item" data-text="BRONZES">
       <div class="timeline__content">
-        <button class="button" href="#" onclick="show('popupb')">
+        <button class="button" onclick="show('popupb')">
         <img class="timeline__img" src="assets\img\AxinnNotes.jpg"/>
       </button>
 
@@ -589,7 +626,16 @@ var hide = function(id) {
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\JohntoMay.jpg"/>
+      <div class="timeline__content">
+        <button class="button" onclick="show('popupc')">
+        <img class="timeline__img" src="assets\img\JohntoMay.jpg"/>
+      </button>
+
+      <div class="popupc" id="popupc">
+        <img src="assets\img\JohntoMay.jpg"/>
+        <a href="#" onclick="hide('popupc')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">January 1964</h2>
         <p class="timeline__content-desc">John Hannah wrote Mr. May explaining that his brother purchsed pieces of Benin antiquities on behalf of himself and the University, and John would like to reimburse Arthur. John also mentioned that there may be some difficulty in exporting the pieces due to antiquities law in Nigeria.</p>
       </div>
