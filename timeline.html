@@ -541,6 +541,240 @@ $("#timeline-1").timeline();
   background: #c1c1c1;
   z-index: -1;
 }
+
+
+
+.popupd {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popupd:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupd:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+
+
+.popupe {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popupe:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupe:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+
+
+.popupf {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popupf:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupf:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+
+
+.popupg {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popupg:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupg:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+
+
+.popuph {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popuph:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popuph:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
+
+.popupi {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #c1c1c1;
+  border: .2px solid #c1c1c1;
+  z-index: 20;
+}
+
+.popupi:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -2;
+}
+
+.popupi:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #c1c1c1;
+  z-index: -1;
+}
+
 </style>
 
 <script>
@@ -641,19 +875,46 @@ var hide = function(id) {
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\customstrouble1.jpg"/>
+      <div class="timeline__content">
+      <button class="button" onclick="show('popupd')">
+        <img class="timeline__img" src="assets\img\customstrouble1.jpg"/>
+      </button>
+
+      <div class="popupd" id="popupd">
+        <img src="assets\img\customstrouble1.jpg"/>
+        <a href="#" onclick="hide('popupd')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">1964</h2>
         <p class="timeline__content-desc">Customs trouble</p>
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\ObjectAcc1.jpg"/>
+      <div class="timeline__content">
+        <button class="button" onclick="show('popupe')">
+        <img class="timeline__img" src="assets\img\ObjectAcc1.jpg"/>
+      </button>
+
+      <div class="popupe" id="popupe">
+        <img src="assets\img\ObjectAcc1.jpg"/>
+        <a href="#" onclick="hide('popupe')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">1964</h2>
         <p class="timeline__content-desc">Pieces were accessed at the Museum, in several "batches". They were accessioned to the Kresge Art Museum Collection, which is now the Broad Art Museum.</p>
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\museumprop1.jpg"/>
+      <div class="timeline__content">
+        <button class="button" onclick="show('popupf')">
+        <img class="timeline__img" src="assets\img\museumprop1.jpg"/>
+      </button>
+
+      <div class="popupf" id="popupf">
+        <img src="assets\img\museumprop1.jpg"/>
+        <a href="#" onclick="hide('popupf')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">1964</h2>
         <p class="timeline__content-desc">
           The pieces became part of permanent display at the Kresge Art Museum
@@ -661,19 +922,45 @@ var hide = function(id) {
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
+      <div class="timeline__content">
+        <button class="button" onclick="show('popupg')">
+        <img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
+      </button>
+
+      <div class="popupg" id="popupg">
+        <img src="assets\img\museumprop1.jpg"/>
+        <a href="#" onclick="hide('popupg')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">1989</h2>
         <p class="timeline__content-desc">One piece from the Benin collection was displayed during the exhibiton Expressions of Afirca, which was produced by curator Dr. Raymon Silverman. In his label for the piece, Dr. Silverman wrote that the piece was not as old as John Hannah was led to believe, but was rather a more contemporary peice that was doctored to look old. Dr. Silverman explained this was very common in the 60s, and cited the patina and physical features as the reason for this assessment.</p>
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="assets\img\HTSimg.png"/>
+      <div class="timeline__content">
+        <button class="button" onclick="show('popuph')">
+        <img class="timeline__img" src="assets\img\HTSimg.png"/>
+
+        <div class="popuph" id="popuph">
+          <img src="assets\img\museumprop1.jpg"/>
+          <a href="#" onclick="hide('popuph')">Close</a>
+        </div>
+
         <h2 class="timeline__content-title">2022</h2>
         <p class="timeline__content-desc">Several of the pieces are displayed in the exhibiton History Told Slant, curated by Steven Bridges</p>
       </div>
     </div>
     <div class="timeline-item" data-text="BRONZES">
-      <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+      <div class="timeline__content">
+        <button class="button" onclick="show('popupi')">
+        <img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+      </button>
+
+      <div class="popupi" id="popupi">
+        <img src="assets\img\museumprop1.jpg"/>
+        <a href="#" onclick="hide('popupi')">Close</a>
+      </div>
+
         <h2 class="timeline__content-title">2023</h2>
         <p class="timeline__content-desc">
           Bronzes researched and analyzed results are
@@ -686,11 +973,9 @@ var hide = function(id) {
 
   <div class="progress-bar" />
   <button class="back-to-top hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-    </svg>
+      <img height=20 width=20 src="assets\img\Up_again.png">
   </button>
-  <div class="progress-bar" />
+  <div class="progress-bar"/>
 
   <style>
   body {
@@ -703,7 +988,7 @@ position: fixed;
 right: 2rem;
 bottom: 2rem;
 border-radius: 100%;
-background: #141c38;
+background: #FFFFFF;
 padding: 0.5rem;
 border: none;
 cursor: pointer;
