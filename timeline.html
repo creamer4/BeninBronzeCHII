@@ -518,6 +518,7 @@ $("#timeline-1").timeline();
   background: #c1c1c1;
   border: .2px solid #c1c1c1;
   z-index: 20;
+  display: block;
 }
 
 .popupc:after {
@@ -529,6 +530,7 @@ $("#timeline-1").timeline();
   right: 0;
   background: #c1c1c1;
   z-index: -2;
+  display: block;
 }
 
 .popupc:before {
@@ -540,6 +542,7 @@ $("#timeline-1").timeline();
   right: 0;
   background: #c1c1c1;
   z-index: -1;
+  display: block;
 }
 
 
@@ -548,9 +551,9 @@ $("#timeline-1").timeline();
   display: none;
   position: fixed;
   padding: 10px;
-  width: 280px;
+  width: 180px;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -100px;
   height: 180px;
   top: 50%;
   margin-top: -100px;
@@ -565,7 +568,7 @@ $("#timeline-1").timeline();
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 00;
   background: #c1c1c1;
   z-index: -2;
 }
@@ -851,7 +854,7 @@ var hide = function(id) {
       </button>
 
       <div class="popupb" id="popupb">
-        <img src="assets\img\DruseToAxinnBuy.jpg"/>
+        <img src="assets\img\AxinnNotes.jpg" height="475" width="350"/>
         <a href="#" onclick="hide('popupb')">Close</a>
       </div>
 
@@ -889,6 +892,7 @@ var hide = function(id) {
         <p class="timeline__content-desc">Customs trouble</p>
       </div>
     </div>
+
     <div class="timeline-item" data-text="BRONZES">
       <div class="timeline__content">
         <button class="button" onclick="show('popupe')">
